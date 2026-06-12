@@ -21,7 +21,7 @@ export default function Hero() {
       <div className="absolute inset-0 bg-background/30" />
 
       {/* Innehåll */}
-      <div className="relative z-10 h-full flex flex-col items-center justify-center text-center px-6 max-w-3xl mx-auto">
+      <div className="relative z-10 h-full flex flex-col items-center justify-center text-center px-6 max-w-3xl mx-auto pt-20 md:pt-0">
         <h1 className="mb-10">
           <span className="sr-only">A Jonasson Byggservice AB</span>
           <Image
@@ -29,7 +29,7 @@ export default function Hero() {
             alt=""
             width={754}
             height={503}
-            className="w-56 md:w-96 h-auto"
+            className="w-64 md:w-96 h-auto"
             priority
           />
         </h1>
