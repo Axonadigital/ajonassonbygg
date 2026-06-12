@@ -29,7 +29,7 @@ export default function Hero() {
             alt=""
             width={754}
             height={503}
-            className="w-72 md:w-96 h-auto"
+            className="w-56 md:w-96 h-auto"
             priority
           />
         </h1>
