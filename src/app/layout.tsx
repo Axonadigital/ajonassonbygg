@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import { Playfair_Display, Inter, Cinzel } from "next/font/google";
 import SmoothScroll from "@/components/SmoothScroll";
 import "./globals.css";
@@ -21,12 +21,35 @@ const cinzel = Cinzel({
   display: "swap",
 });
 
+const SITE_URL = "https://ajonassonbygg.se";
+const TITLE = "A Jonasson Byggservice AB – Snickare i Östersund";
+const DESCRIPTION =
+  "Professionell byggservice i Östersundsområdet. Tak, fönster, kök, renovering och snickeri med hög kvalitet.";
+
+export const viewport: Viewport = {
+  themeColor: "#c6b08e",
+};
+
 export const metadata: Metadata = {
-  metadataBase: new URL("https://ajonassonbygg.se"),
-  title: "A Jonasson Byggservice AB – Snickare i Östersund",
-  description:
-    "Professionell byggservice i Östersundsområdet. Tak, fönster, kök, renovering och snickeri med hög kvalitet.",
+  metadataBase: new URL(SITE_URL),
+  title: TITLE,
+  description: DESCRIPTION,
   keywords: ["snickare", "byggservice", "Östersund", "renovering", "tak", "fönster", "kök"],
+  authors: [{ name: "A Jonasson Byggservice AB" }],
+  robots: { index: true, follow: true },
+  openGraph: {
+    type: "website",
+    locale: "sv_SE",
+    siteName: "A Jonasson Byggservice AB",
+    url: `${SITE_URL}/`,
+    title: TITLE,
+    description: DESCRIPTION,
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: TITLE,
+    description: DESCRIPTION,
+  },
 };
 
 export default function RootLayout({
