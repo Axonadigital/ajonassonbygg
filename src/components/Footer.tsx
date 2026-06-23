@@ -98,11 +98,25 @@ export default function Footer() {
 
       {/* Botten */}
       <div className="border-t border-foreground/10">
-        <div className="max-w-7xl mx-auto px-6 py-5 flex flex-col sm:flex-row items-center justify-between gap-2">
+        <div className="max-w-7xl mx-auto px-6 py-5 flex flex-col sm:flex-row items-center justify-between gap-3">
           <p className="text-foreground/40 text-xs">
-            © {new Date().getFullYear()} A Jonasson Byggservice AB
+            © {new Date().getFullYear()} A Jonasson Byggservice AB · Org.nr 559400-0225
           </p>
-          <p className="text-foreground/40 text-xs">Org.nr 559400-0225 · Östersund</p>
+          <a
+            href="https://axonadigital.se"
+            target="_blank"
+            rel="noreferrer noopener"
+            className="flex items-center gap-2 opacity-40 hover:opacity-70 transition-opacity"
+          >
+            <span className="text-foreground text-xs">Skapad av</span>
+            <Image
+              src="/axona-logo.png"
+              alt="Axona Digital"
+              width={80}
+              height={53}
+              className="h-5 w-auto object-contain"
+            />
+          </a>
         </div>
       </div>
     </footer>
