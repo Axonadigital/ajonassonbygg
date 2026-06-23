@@ -22,6 +22,7 @@ const cinzel = Cinzel({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://ajonassonbygg.se"),
   title: "A Jonasson Byggservice AB – Snickare i Östersund",
   description:
     "Professionell byggservice i Östersundsområdet. Tak, fönster, kök, renovering och snickeri med hög kvalitet.",
