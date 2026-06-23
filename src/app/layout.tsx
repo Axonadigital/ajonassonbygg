@@ -1,6 +1,5 @@
 import type { Metadata, Viewport } from "next";
 import { Playfair_Display, Inter, Cinzel } from "next/font/google";
-import SmoothScroll from "@/components/SmoothScroll";
 import "./globals.css";
 
 const playfair = Playfair_Display({
@@ -60,7 +59,7 @@ export default function RootLayout({
   return (
     <html lang="sv" className={`${playfair.variable} ${inter.variable} ${cinzel.variable}`}>
       <body className="bg-light text-ink font-sans antialiased">
-        <SmoothScroll>{children}</SmoothScroll>
+        {children}
       </body>
     </html>
   );
