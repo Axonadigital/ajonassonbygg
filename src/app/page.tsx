@@ -10,7 +10,7 @@ const jsonLd = {
   "@context": "https://schema.org",
   "@type": "HomeAndConstructionBusiness",
   name: "A Jonasson Byggservice AB",
-  url: "https://ajonassonbygg.se",
+  url: "https://jonassonbyggservice.se",
   description:
     "Professionell byggservice i Östersundsområdet. Tak, fönster, kök, renovering och snickeri med hög kvalitet.",
   telephone: "+46706796199",

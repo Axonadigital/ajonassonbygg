@@ -21,7 +21,7 @@ const cinzel = Cinzel({
   display: "swap",
 });
 
-const SITE_URL = "https://ajonassonbygg.se";
+const SITE_URL = "https://jonassonbyggservice.se";
 const TITLE = "A Jonasson Byggservice AB – Snickare i Östersund";
 const DESCRIPTION =
   "Professionell byggservice i Östersundsområdet. Tak, fönster, kök, renovering och snickeri med hög kvalitet.";

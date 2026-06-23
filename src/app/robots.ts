@@ -3,6 +3,6 @@ import { MetadataRoute } from "next";
 export default function robots(): MetadataRoute.Robots {
   return {
     rules: { userAgent: "*", allow: "/" },
-    sitemap: "https://ajonassonbygg.se/sitemap.xml",
+    sitemap: "https://jonassonbyggservice.se/sitemap.xml",
   };
 }
